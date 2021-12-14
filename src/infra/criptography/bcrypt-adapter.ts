@@ -1,6 +1,6 @@
-import bcrypt from 'bcrypt'
-
 import { Encrypter } from '../../data/protocols/encrypter'
+
+const bcrypt = require('bcrypt')
 
 export class BcryptAdapter implements Encrypter {
   private readonly salt: number
